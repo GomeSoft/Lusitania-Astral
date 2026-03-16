@@ -50,17 +50,17 @@
                 
                 <div class="flex flex-col">
                     <label for="localizacao" class="mb-2 text-sm">Galáxia / Sistema</label>
-                    <input type="text" id="localizacao" placeholder="Ex: Via Láctea, Sistema Solar" class="bg-gray-700 border border-gray-600 p-2 rounded">
+                    <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Via Láctea, Sistema Solar" class="bg-gray-700 border border-gray-600 p-2 rounded">
                 </div>
 
                 <div class="flex flex-col">
                     <label for="preco" class="mb-2 text-sm">Preço (BTC)</label>
-                    <input type="number" id="preco" step="0.0001" min="0" required class="bg-gray-700 border border-gray-600 p-2 rounded text-yellow-400 font-bold">
+                    <input type="number" id="preco" name="preco" step="0.0001" min="0" required class="bg-gray-700 border border-gray-600 p-2 rounded text-yellow-400 font-bold">
                 </div>
 
-                <div class="flex flex-col text-black">
+                <div class="flex flex-col">
                     <label for="estado" class="mb-2 text-sm text-white">Estado Inicial</label>
-                    <select id="estado" class="bg-gray-700 border border-gray-600 p-2 rounded text-white">
+                    <select id="estado" name="estado" class="bg-gray-700 border border-gray-600 p-2 rounded text-white">
                         <option value="Disponível">Disponível</option>
                         <option value="Vendido">Vendido</option>
                     </select>
@@ -73,7 +73,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
                         <label class="block mb-2 text-sm">Fauna Predominante:</label>
-                        <select id="fauna" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
+                        <select id="fauna" name="fauna" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
                             <option value="terrestre">Terrestre</option>
                             <option value="aviario">Aviário</option>
                             <option value="aquatico">Aquático</option>
@@ -84,7 +84,7 @@
 
                     <div>
                         <label class="block mb-2 text-sm">Flora Predominante:</label>
-                        <select id="flora" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
+                        <select id="flora" name="flora" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
                             <option value="madeireira">Madeireira</option>
                             <option value="ornamental">Ornamental</option>
                         </select>
@@ -92,7 +92,7 @@
 
                     <div>
                         <label class="block mb-2 text-sm">Geologia:</label>
-                        <select id="geologia" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
+                        <select id="geologia" name="geologia" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
                             <option value="minerio">Minério</option>
                             <option value="gas">Gás</option>
                             <option value="liquido">Líquido</option>
@@ -109,5 +109,6 @@
         </form>
     </section>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
