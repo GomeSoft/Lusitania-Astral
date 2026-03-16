@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lusitania Astral</title>
+    <title>Lusitânia Astral - Montra Galáctica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Lusitania Astral</h1>
-    <p>Welcome to Lusitania Astral, a place where the stars meet the sea. Explore the wonders of the cosmos and the mysteries of the ocean in one unforgettable experience.</p>
-    <p>Join us on a journey through the night sky, where you can witness the beauty of the constellations and the magic of the universe. Whether you're an avid stargazer or simply looking for a unique adventure, Lusitania Astral has something for everyone.</p>
-    <p>Discover the secrets of the cosmos, learn about the planets and stars, and immerse yourself in the wonders of the night sky. With our expert guides and state-of-the-art equipment, you'll have an unforgettable experience that will leave you in awe of the universe.</p>
-    <p>Don't miss out on this incredible opportunity to explore the cosmos and the sea. Book your adventure with Lusitania Astral today and embark on a journey that will take you to the stars and beyond!</p>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-400">Lusitânia Astral</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-blue-300">Montra</a></li>
+                <li><a href="admin.html" class="hover:text-blue-300">Centro de Comando</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto p-6">
+        <h2 class="text-3xl font-semibold mb-6">Planetas em Destaque</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="grelha-planetas">
+            
+            <article class="bg-gray-800 rounded-lg overflow-hidden shadow-xl border border-gray-700">
+                <img src="Jupiter.jpg" alt="Planeta" class="w-full h-48 object-cover" onerror="this.src='caminho/para/espaco_profundo.jpg'">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Nome do Planeta</h3>
+                    <p class="text-gray-400 mb-1">Galáxia: <span class="text-white">Via Láctea</span></p>
+                    <p class="text-gray-400 mb-3">Preço: <span class="text-yellow-400 font-bold">1.5 BTC</span></p>
+                    
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="px-3 py-1 bg-green-600 text-xs font-bold rounded">Disponível</span>
+                        <a href="detalhes.html?id=123" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded transition">Ver Detalhes</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
 </body>
 </html>
