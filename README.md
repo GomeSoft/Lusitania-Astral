@@ -77,7 +77,7 @@ Lusitania-Astral/
 - ✅ Estados visuais "Vendido"/"Disponível"
 
 ### Pessoa B (Lógica & Integração)
-- ✅ API com funções fetch (GET, POST, PUT, DELETE)
+- ✅ API com funções fetch (GET, POST, PATCH, DELETE)
 - ✅ URLSearchParams para capturar ID do planeta
 - ✅ Conversor BTC para EUR
 - ✅ Filtros por tipo de recurso
@@ -86,11 +86,15 @@ Lusitania-Astral/
 
 ## 🔧 Configuração da API
 
-Atualmente usa dados mockados em `js/api.js`. Para conectar a uma API real:
+A aplicação agora consome dados diretamente da API pública:
 
-1. Substitua `API_BASE_URL` pela URL da sua API
-2. Remova os dados mockados e use as funções fetch reais
-3. Certifique-se que a API retorna dados no formato esperado
+- Endpoint: `https://formacoes-api.onrender.com/imobiliaria-interplanetaria`
+
+O arquivo `js/api.js` faz o mapeamento dos campos remotos para o formato esperado pela UI e usa localStorage como fallback caso a API esteja indisponível.
+
+A rota remota suporta **GET, POST, PATCH e DELETE**; o código tenta sempre operar remotamente, mas usa localStorage caso o servidor esteja indisponível.
+
+Se quiser apontar para uma API diferente, altere `REMOTE_API_URL` em `js/api.js` e garanta que o retorno contenha os campos usados pelo frontend (nome, descricao, preco_btc, fotos, recursos, vendedor, vendido). 
 
 ## 🎨 Cores da Lusitânia Astral
 
