@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lusitânia Astral - Registo de Descoberta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-400">Lusitânia Astral</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-blue-300">Montra</a></li>
+                <li><a href="admin.html" class="hover:text-blue-300">Centro de Comando</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto p-6 max-w-4xl">
+        <header class="mb-8">
+            <h2 class="text-3xl font-semibold">Registo de Nova Descoberta</h2>
+            <p class="text-gray-400">Preencha os dados do novo corpo celeste para o catálogo intergaláctico.</p>
+        </header>
+
+        <form id="form-planeta" class="bg-gray-800 p-8 rounded-lg shadow-2xl space-y-6">
+            
+            <fieldset class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <legend class="text-xl font-bold text-blue-300 mb-4 border-b border-gray-700 w-full pb-2">Identificação</legend>
+                
+                <div class="flex flex-col">
+                    <label for="nome" class="mb-2 text-sm">Nome do Planeta (Obrigatório)</label>
+                    <input type="text" id="nome" required class="bg-gray-700 border border-gray-600 p-2 rounded focus:border-blue-500 outline-none">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="vendedor" class="mb-2 text-sm">Entidade/Explorador Proprietário</label>
+                    <input type="text" id="vendedor" class="bg-gray-700 border border-gray-600 p-2 rounded focus:border-blue-500 outline-none">
+                </div>
+
+                <div class="flex flex-col md:col-span-2">
+                    <label for="descricao" class="mb-2 text-sm">Descrição (Clima, Gravidade, Potencial)</label>
+                    <textarea id="descricao" rows="3" class="bg-gray-700 border border-gray-600 p-2 rounded focus:border-blue-500 outline-none"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <legend class="text-xl font-bold text-blue-300 mb-4 border-b border-gray-700 w-full pb-2">Geografia e Custos</legend>
+                
+                <div class="flex flex-col">
+                    <label for="localizacao" class="mb-2 text-sm">Galáxia / Sistema</label>
+                    <input type="text" id="localizacao" placeholder="Ex: Via Láctea, Sistema Solar" class="bg-gray-700 border border-gray-600 p-2 rounded">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="preco" class="mb-2 text-sm">Preço (BTC)</label>
+                    <input type="number" id="preco" step="0.0001" min="0" required class="bg-gray-700 border border-gray-600 p-2 rounded text-yellow-400 font-bold">
+                </div>
+
+                <div class="flex flex-col text-black">
+                    <label for="estado" class="mb-2 text-sm text-white">Estado Inicial</label>
+                    <select id="estado" class="bg-gray-700 border border-gray-600 p-2 rounded text-white">
+                        <option value="Disponível">Disponível</option>
+                        <option value="Vendido">Vendido</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="space-y-4">
+                <legend class="text-xl font-bold text-blue-300 mb-4 border-b border-gray-700 w-full pb-2">Recursos Detetados</legend>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <label class="block mb-2 text-sm">Fauna Predominante:</label>
+                        <select id="fauna" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
+                            <option value="terrestre">Terrestre</option>
+                            <option value="aviario">Aviário</option>
+                            <option value="aquatico">Aquático</option>
+                            <option value="marisco">Marisco</option>
+                            <option value="insetos">Insetos</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block mb-2 text-sm">Flora Predominante:</label>
+                        <select id="flora" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
+                            <option value="madeireira">Madeireira</option>
+                            <option value="ornamental">Ornamental</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block mb-2 text-sm">Geologia:</label>
+                        <select id="geologia" class="w-full bg-gray-700 border border-gray-600 p-2 rounded text-sm">
+                            <option value="minerio">Minério</option>
+                            <option value="gas">Gás</option>
+                            <option value="liquido">Líquido</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="flex justify-end space-x-4 pt-6 border-t border-gray-700">
+                <button type="button" onclick="history.back()" class="px-6 py-2 border border-gray-500 rounded hover:bg-gray-700 transition">Cancelar</button>
+                <button type="submit" class="px-6 py-2 bg-blue-600 hover:bg-blue-500 rounded font-bold transition">Confirmar Descoberta</button>
+            </div>
+
+        </form>
+    </section>
+
+</body>
+</html>

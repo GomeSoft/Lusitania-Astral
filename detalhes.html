@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lusitânia Astral - Detalhes do Planeta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-400">Lusitânia Astral</h1>
+            <ul class="flex space-x-4 font-semibold">
+                <li><a href="index.html" class="hover:text-blue-300">Montra</a></li>
+                <li><a href="admin.html" class="hover:text-blue-300">Centro de Comando</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-6">
+        <article class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            
+            <section>
+                <div class="rounded-xl overflow-hidden bg-black mb-4 border border-gray-700 h-96">
+                    <img id="foto-principal" src="Jupiter.jpg" alt="Vista Orbital" class="w-full h-full object-cover" onerror="this.src=''">
+                </div>
+                <div class="grid grid-cols-4 gap-2">
+                    <img src="" class="h-20 w-full object-cover rounded cursor-pointer border border-gray-600 hover:border-blue-500" onerror="this.src=''">
+                    <img src="" class="h-20 w-full object-cover rounded cursor-pointer border border-gray-600 hover:border-blue-500" onerror="this.src=''">
+                    <img src="" class="h-20 w-full object-cover rounded cursor-pointer border border-gray-600 hover:border-blue-500" onerror="this.src=''">
+                    <img src="" class="h-20 w-full object-cover rounded cursor-pointer border border-gray-600 hover:border-blue-500" onerror="this.src=''">
+                </div>
+            </section>
+
+            <section class="space-y-6">
+                <header class="flex justify-between items-start">
+                    <div>
+                        <h2 id="nome-planeta" class="text-4xl font-bold text-blue-300">Nome do Planeta</h2>
+                        <p class="text-gray-400 text-lg" id="localizacao-planeta">Galáxia • Sistema Estelar</p>
+                    </div>
+                    <button class="p-3 bg-gray-800 rounded-full border border-gray-600 hover:bg-pink-900 transition" title="Adicionar aos Favoritos">
+                        <span class="text-2xl">⭐</span>
+                    </button>
+                </header>
+
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-inner">
+                    <p id="descricao-planeta" class="text-gray-300 leading-relaxed italic">
+                        "Descrição detalhada sobre o clima, gravidade e potencial de habitação..."
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="bg-gray-800 p-3 rounded">
+                        <span class="text-gray-500 block">Tipo de Parcela</span>
+                        <span id="parcela" class="font-bold">Planeta Inteiro</span>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded">
+                        <span class="text-gray-500 block">Área Útil</span>
+                        <span id="area" class="font-bold">0 $km^2$</span>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded">
+                        <span class="text-gray-500 block">Recursos</span>
+                        <span id="recursos" class="font-bold text-green-400">Minério, Marisco, Madeireira</span>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded">
+                        <span class="text-gray-500 block">Vendedor</span>
+                        <span id="vendedor" class="font-bold">Nome do Explorador</span>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="text-center md:text-left">
+                        <span class="text-3xl font-mono text-yellow-400 font-bold" id="preco-btc">0.00 BTC</span>
+                        <p class="text-gray-500 text-sm">Est. em Euros: <span id="preco-euro" class="text-white">€ 0.00</span></p>
+                    </div>
+                    <button class="w-full md:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold text-xl transition shadow-lg">
+                        Iniciar Negociação
+                    </button>
+                </div>
+                
+                <p class="text-xs text-gray-600 text-center italic">ID do Registo: <span id="uuid">0000-0000-0000-0000</span></p>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>
