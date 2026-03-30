@@ -1,11 +1,11 @@
-# 🌌 Lusitânia Astral: Imobiliária Interplanetária
+# Lusitânia Astral: Imobiliária Interplanetária
 
 A Lusitânia Astral é uma plataforma pioneira dedicada à compra e venda de corpos celestes e parcelas territoriais em todo o universo conhecido.
 Graças à revolucionária tecnologia de "Dobras de Camões", eliminámos as barreiras das viagens intergalácticas, permitindo que novos colonos e investidores adquiram o seu lugar nas estrelas.
 
 Este projeto foi desenvolvido como um exercício de consolidação de conteúdos, focando-se na gestão de inventário e na estruturação de dados complexos através de objetos dinâmicos.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - **Gestão de Inventário**: Registo e controlo completo de planetas, sistemas estelares e zonas específicas.
 - **Visualização Apelativa**: Interface preparada para exibir detalhes climáticos, gravidade e potencial de habitação.
@@ -15,7 +15,7 @@ Este projeto foi desenvolvido como um exercício de consolidação de conteúdos
 - **CRUD Completo**: Criar, ler, atualizar e eliminar planetas.
 - **Responsividade**: Design responsivo usando Tailwind CSS.
 
-## 🪐 Estrutura de Dados (Objeto Planeta)
+## Estrutura de Dados (Objeto Planeta)
 
 Cada corpo celeste é tratado como um objeto único, contendo:
 
@@ -35,7 +35,7 @@ Cada corpo celeste é tratado como um objeto único, contendo:
 }
 ```
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5**: Estrutura semântica com tags como `<article>`, `<section>`, `<nav>`
 - **CSS**: Tailwind CSS para estilização responsiva
@@ -44,7 +44,7 @@ Cada corpo celeste é tratado como um objeto único, contendo:
 - **LocalStorage**: Persistência de favoritos
 - **URLSearchParams**: Para capturar IDs na página de detalhes
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Lusitania-Astral/
@@ -60,13 +60,13 @@ Lusitania-Astral/
     └── main.js         # Lógica principal da aplicação
 ```
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Clone ou baixe o repositório
 2. Abra os arquivos HTML diretamente no navegador, ou
 4. Abra `index.html` diretamente no navegador ou, se preferir, use uma extensão de Live Server no seu editor (ex: Live Server no VS Code).
 
-## 📋 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 ### Pessoa A (Front-end & UX)
 - ✅ Estrutura HTML5 semântica
@@ -84,7 +84,7 @@ Lusitania-Astral/
 - ✅ Sistema de favoritos no localStorage
 - ✅ Validação de formulário (preços não negativos, UUID gerado)
 
-## 🔧 Configuração da API
+## Configuração da API
 
 Atualmente usa dados mockados em `js/api.js`. Para conectar a uma API real:
 
@@ -92,7 +92,7 @@ Atualmente usa dados mockados em `js/api.js`. Para conectar a uma API real:
 2. Remova os dados mockados e use as funções fetch reais
 3. Certifique-se que a API retorna dados no formato esperado
 
-## 🎨 Cores da Lusitânia Astral
+## Cores da Lusitânia Astral
 
 - Fundo: `bg-gray-900` (cinza escuro)
 - Texto: `text-white`
@@ -100,7 +100,7 @@ Atualmente usa dados mockados em `js/api.js`. Para conectar a uma API real:
 - Preços: `text-yellow-400` (amarelo)
 - Estados: Verde para disponível, vermelho para vendido
 
-## 📝 Notas de Desenvolvimento
+## Notas de Desenvolvimento
 
 - O projeto usa dados mockados para demonstração
 - A conversão BTC/EUR usa a API CoinGecko (com fallback)
